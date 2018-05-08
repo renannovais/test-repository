@@ -22,8 +22,6 @@ api.add_resource(StoreList,'/stores')
 api.add_resource(UserRegister, '/register')
 
 if __name__ == '__main__':
-# __main__ is the name of the file we run. If we want
-# to run app.py it is ok! If we import then don´t run it.
     from db import db
     db.init_app(app)
     app.run(port=5000, debug=True)
